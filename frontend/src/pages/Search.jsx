@@ -19,7 +19,7 @@ const Search = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/recipes?ingredient=${ingredient}`
+        `https://recipe-discovery-backend.onrender.com/api/recipes?ingredient=${ingredient}`
       );
       const data = await res.json();
       setRecipes(data.meals || []);
