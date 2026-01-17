@@ -17,7 +17,7 @@ const RecipeDetail = () => {
   useEffect(() => {
     const fetchRecipeDetails = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/recipe/${id}`);
+        const res = await fetch(`https://recipe-discovery-backend.onrender.com/api/recipe/${id}`);
         const data = await res.json();
         
         if (data.meals && data.meals[0]) {
